@@ -1,9 +1,8 @@
 ﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-Console.WriteLine("введите трехзначное число");
+Console.WriteLine("введите число");
 int a = Convert.ToInt32(Console.ReadLine());
-int b = a / 100 % 10;
-if (b < 1)
-    Console.WriteLine("третья цияра отсутствует");
+if (a / 100 == 0 )
+    Console.WriteLine("третья цифра отсутствует");
 else
-    Console.WriteLine($"третье число = {b}");
+    Console.WriteLine($"третья цифра = {a / 100 % 10}");
